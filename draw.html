@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <meta content="telephone=no" name="format-detection" />
+	<title>人保</title>
+    <link rel="stylesheet" type="text/css" href="http://static.vipgogo.com/picc/carLogo/css/draw.css">
+
+</head>
+<body>
+    <div class="page">
+    	<div class="bigBox">
+            <!-- 标题 -->
+            <div class="title">
+                <img src="http://static.vipgogo.com/picc/carLogo/img/head_bg2.png" class="title_bg">
+                <img src="http://static.vipgogo.com/picc/carLogo/img/word4.png" class="word">
+            </div>
+            <div class="scratch">
+                <img src="http://static.vipgogo.com/picc/carLogo/img/scratch.png">
+            </div>
+            <!-- 刮奖区 -->
+            <div class="draw">
+                <img src="http://static.vipgogo.com/picc/carLogo/img/card_1.png" class="card">
+                <img id="redux" src="http://static.vipgogo.com/picc/carLogo/img/card_1.png" />
+                <!-- <img id="robot"  src="http://static.vipgogo.com/picc/carLogo/img/card_2.png" /> -->
+                <div id="robot">
+                  <div class="prize"></div>
+                </div>
+            </div>
+            <!-- 按钮 -->
+            <button class="btn">
+                <img src="http://static.vipgogo.com/picc/carLogo/img/btn4.png">
+            </button>
+        </div>
+        <!-- 油卡 -->
+        <div class="cover cover1">
+            <!-- 标题 -->
+            <div class="title">
+                <img src="http://static.vipgogo.com/picc/carLogo/img/head_bg2.png" class="title_bg">
+                <!-- <img src="http://static.vipgogo.com/picc/carLogo/img/word5.png" class="word"> -->
+                <div class="detail">
+                    你需要填写下面的信息，我们才能把<span>**</span>准确的送到你的手里
+                </div>
+            </div>
+            <!-- 输入框 -->
+            <div class="group_input">
+                <div class="common">
+                    <input type="text" id="username1" placeholder="姓名：" />
+                    <div class="message_tip message_tip1"></div>
+                </div>
+                <div class="common">
+                    <input type="tel" maxlength="11" id="mobile1" placeholder="电话："/>
+                    <div class="message_tip message_tip2"></div>
+                </div>
+                <div class="common">
+                    <input type="text" id="car" placeholder="车牌号：请填写您在重庆人保会员绑定的车牌号"/>
+                    <div class="message_tip message_tip5"></div>
+                </div>
+            </div>
+            <div class="scratch">
+                <img src="http://static.vipgogo.com/picc/carLogo/img/tip2.png">
+                <!-- <div class="word_box">
+                    <p>1.请保持领奖预留信息与会员信息填写一致；</p>
+                    <p>2.通用糕点电子券将在活动结束后5个工作日内通过短信的方式发送至<span>上方您填写的手机号</span>，请注意查看，关于通用糕点电子券适用门店，请查阅本期活动图文；</p>
+                    <p>3.我们会在活动结束后10个工作日内将礼品（油卡、洗车券）通过电子券的形式发至您的会员账户下;</p>
+                    <p>4.活动期间每个客户仅可中奖一次；多微信号留一个信息领奖无效；</p>
+                    <p>5.在重庆人保财险投保且已注册为会员的用户才可兑奖。</p>
+                </div> -->
+            </div>
+            <!-- 按钮 -->
+            <button class="btn">
+                <img src="http://static.vipgogo.com/picc/carLogo/img/btn4.png">
+            </button>
+        </div>
+        <!-- 蛋糕券 -->
+        <div class="cover cover2">
+            <!-- 标题 -->
+            <div class="title">
+                <img src="http://static.vipgogo.com/picc/carLogo/img/head_bg2.png" class="title_bg">
+                <!-- <img src="http://static.vipgogo.com/picc/carLogo/img/word6.png" class="word"> -->
+                <div class="detail">
+                    你需要填写下面的信息，我们才能把<span>**</span>准确的送到你的手里
+                </div>
+            </div>
+            <!-- 输入框 -->
+            <div class="group_input">
+                <div class="common">
+                    <input type="text" id="username2" placeholder="姓名：" />
+                    <div class="message_tip message_tip3"></div>
+                </div>
+                <div class="common">
+                    <input type="tel" maxlength="11" id="mobile2" placeholder="电话："/>
+                    <div class="message_tip message_tip4"></div>
+                </div>
+                <div class="common">
+                    <input type="text" id="car2" placeholder="车牌号：请填写您在重庆人保会员绑定的车牌号"/>
+                    <div class="message_tip message_tip6"></div>
+                </div>
+            </div>
+            <div class="scratch">
+                <img src="http://static.vipgogo.com/picc/carLogo/img/tip2.png">
+                <!-- <div class="word_box">
+                    <p>1.请保持领奖预留信息与会员信息填写一致；</p>
+                    <p>2.通用糕点电子券将在活动结束后5个工作日内通过短信的方式发送至<span>上方您填写的手机号</span>，请注意查看，关于通用糕点电子券适用门店，请查阅本期活动图文；</p>
+                    <p>3.我们会在活动结束后10个工作日内将礼品（油卡、洗车券）通过电子券的形式发至您的会员账户下;</p>
+                    <p>4.活动期间每个客户仅可中奖一次；多微信号留一个信息领奖无效；</p>
+                    <p>5.在重庆人保财险投保且已注册为会员的用户才可兑奖。</p>
+                </div> -->
+            </div>
+            <!-- 按钮 -->
+            <button class="btn">
+                <img src="http://static.vipgogo.com/picc/carLogo/img/btn4.png">
+            </button>
+        </div>
+        <!-- 注册 -->
+        <div class="cover cover3">
+            <!-- 标题 -->
+            <div class="title">
+                <img src="http://static.vipgogo.com/picc/carLogo/img/head_bg2.png" class="title_bg">
+                <img src="http://static.vipgogo.com/picc/carLogo/img/word7.png" class="word">
+            </div>
+            <div class="scratch">
+                <img src="http://static.vipgogo.com/picc/carLogo/img/tip3.png">
+            </div>
+            <!-- 按钮 -->
+            <button class="btn">
+                <img src="http://static.vipgogo.com/picc/carLogo/img/btn4.png">
+            </button>
+        </div>
+        <!-- 程序有误 -->
+        <div class="cover cover4">
+            <!-- 标题 -->
+            <div class="title">
+                <img src="http://static.vipgogo.com/picc/carLogo/img/head_bg2.png" class="title_bg">
+                <div class="title_word">错误提示</div>
+            </div>
+            <div class="scratch">
+                <img src="http://static.vipgogo.com/picc/carLogo/img/tip4.png">
+                <div class="message">
+                    <p>程序有BUG，请重新再试一次！</p>
+                </div>
+            </div>
+            <!-- 按钮 -->
+            <button class="btn">
+                <img src="http://static.vipgogo.com/picc/carLogo/img/btn4.png">
+            </button>
+        </div>
+    </div>
+
+    
+	<script type="text/javascript" src="http://static.vipgogo.com/picc/carLogo/js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="http://static.vipgogo.com/picc/carLogo/js/jquery.eraser.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            //图片加载
+            function imgLoad(arr,callBack){
+                var len = arr.length;//所有图片的个数
+                var imgs = {};//创建一个空的JSON,去存我们的所有图片
+                var loaded = 0;//记录我们加载了多少张图片
+
+                for(var i = 0; i < len; i ++){
+                    var img = new Image();
+                    img.onload = function(){
+                        loaded ++ ;//增加了一张图片
+                        //加载完成
+                        if(loaded == len){
+                            callBack();
+                        }
+                    }
+                    img.src = arr[i];
+                    var name1 = arr[i].split("/");
+                    var name2 = name1[name1.length-1]; 
+                    var name = name2.split(".")[0];
+                    imgs[name] = arr[i];
+                    // console.log(imgs);
+                }
+            }
+
+            //存放预加载图片数组
+            var arr = ["http://static.vipgogo.com/picc/carLogo/img/card_1.png",
+                        "http://static.vipgogo.com/picc/carLogo/img/card_4.png"
+                        ];
+
+            var notice = 0;
+            //size 指定一个画笔大小,添加一些选项(默认值为40)
+            //progressFunction 擦出后的回调函数，他接收一个参数，为擦出后的比率（0.0 – 1.0）
+
+            //必须确保图片是完全加载之后调用eraser(),否则它不会工作。
+            imgLoad(arr,function(){
+                $('#redux').eraser({
+                    size: 30,
+                    completeRatio: 1,
+                    progressFunction: function(p) {
+                        var progres = Math.round(p*100);
+                        if(!notice){   
+                            if(progres >= 50){
+                                notice = 1;
+                                $('#redux').eraser('clear');
+                                var random = Math.ceil(Math.random()*3);
+                                if(random == 1){
+                                    $("#robot .prize").html('恭喜您！刮出了100元油卡!');
+                                    $(".bigBox .btn").click(function(){
+                                        $(".bigBox").hide();
+                                        $(".cover1").show();
+                                    });
+                                }else if(random == 2){
+                                    $("#robot .prize").html('恭喜您！刮出了蛋糕券!');
+                                    $(".bigBox .btn").click(function(){
+                                        $(".bigBox").hide();
+                                        $(".cover2").show();
+                                    });
+                                }else if(random == 3){
+                                    $("#robot .prize").html('很遗憾！手气不太好，再去答题 继续来试手气！');
+                                }
+                                
+                            }
+                        }
+                    }
+                });
+            });
+
+            
+            
+            //失去焦点事件
+            function mobileBlur(obj,tip){
+                $(obj).blur(function(){
+                    //判断手机号
+                    var mobile = $(obj).val().trim();
+                    var patt_str = /^1[3|4|5|7|8]\d{9}$/;
+                    var RegExpObj = new RegExp(patt_str);
+                    if(!RegExpObj.test(mobile))
+                    {
+                      $(tip).text("手机号有误！");
+                      return false;
+                    }else{
+                        $(tip).text("");
+                    }
+                });
+            }
+
+            //检查是否输入的是数字
+            function checkNum(id,tip){
+              var obj = document.getElementById(id);
+              obj.addEventListener("input",function(){
+                var mobile = $("#"+id).val().trim();
+                var patt_str = /^1[3|4|5|7|8]\d{9}$/;
+                var RegExpObj = new RegExp(patt_str);
+                if(isNaN(mobile)){      //判断是否是数字
+                  $(obj).val("");
+                }else{
+                    if(!RegExpObj.test(mobile) && mobile.length == 11)
+                    {
+                      $(tip).text("手机号有误！");
+                      return false;
+                    }else{
+                        $(tip).text("");
+                    }
+                  
+                } 
+              });
+            }
+
+            //调用函数
+            mobileBlur("#mobile1",".message_tip2");
+            checkNum("mobile1",".message_tip2");
+
+            mobileBlur("#mobile2",".message_tip4");
+            checkNum("mobile2",".message_tip4");
+
+            //姓名不能为空
+            function checkNull(obj,tip){
+                $(obj).blur(function(){
+                    var username = $(obj).val().trim();
+                    if(username == ""){
+                        $(tip).text("姓名不能为空!");
+                    }
+                });
+            }
+
+            //检查是否输入
+            function checkHas(id,tip){
+              var obj = document.getElementById(id);
+              obj.addEventListener("input",function(){
+                var username = $(obj).val().trim();
+                if(username == ""){
+                    $(tip).text("姓名不能为空!");
+                }else{
+                    $(tip).text("");
+                }
+                
+              });
+            }
+            //调用函数
+            checkNull("#username1",".message_tip1");
+            checkHas("username1",".message_tip1");
+
+            checkNull("#username2",".message_tip3");
+            checkHas("username2",".message_tip3");
+            
+        });
+    </script>
+</body>
+</html>
