@@ -1,0 +1,582 @@
+@charset "utf-8";
+html {
+  font-size: 20px;
+}
+@media only screen and (min-width: 400px) {
+  html {
+    font-size: 21.33333333px !important;
+  }
+}
+@media only screen and (min-width: 414px) {
+  html {
+    font-size: 22.08px !important;
+  }
+}
+@media only screen and (min-width: 480px) {
+  html {
+    font-size: 25.6px !important;
+  }
+}
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+*{
+	padding: 0;
+	margin: 0 auto;
+	box-sizing:border-box;
+}
+body{
+	position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+	font-family: "Helvetica Neue", Helvetica, Arial, "PingFang SC","Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+}
+img{
+	border: none;
+}
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+.clear{
+	clear: both;
+}
+.clearfix:after{ 
+	content:"";
+	display:block;
+	clear:both;
+}
+a{
+	text-decoration: none;
+}
+li{
+	list-style: none;
+}
+input,button{
+	-webkit-appearance:none; /*去除input默认样式*/
+	outline: none; /*去除input轮廓的颜色*/
+}
+
+.page{
+	min-width: 320px;
+	max-width: 640px;
+	height: 100%;
+	overflow: hidden;
+	background: url(../img/bg1.jpg) no-repeat center center/100% 100%;
+	position: relative;
+}
+/* 音乐播放 */
+#lanren{
+	position: absolute;
+    top: .5rem;
+    right: .5rem;
+    z-index: 1000;
+}
+#lanren #audio-btn {
+    width: 2.2rem;
+    height: 2.2rem;
+    background-size: 100% 100%;
+}
+#lanren .on{
+  background: url(../img/music_on.png) no-repeat 0 0;
+  -webkit-animation: rotating 1.2s linear infinite;
+  animation: rotating 1.2s linear infinite;
+}
+#lanren .off{
+  background: url(../img/music_off.png) no-repeat 0 0;
+}
+@-webkit-keyframes rotating {
+  from{
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+  }
+  to{
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotating {
+    from{
+        -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    to{
+        -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+/* loading */
+.loading{
+	/*display: none;*/
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 100%;
+	-webkit-transform:translate(-50%,-50%);
+	transform:translate(-50%,-50%);
+}
+.loading_box{
+	width: 85%;
+	overflow: hidden;
+	position: relative;
+}
+img.loading_bg{
+	display: block;
+	width: 100%;
+}
+.loading_process{
+	position: absolute;
+	top: 50%;
+	left: 0;
+	-webkit-transform:translate(0,-50%);
+	transform:translate(0,-50%);
+}
+img.loading1{
+	display: none;
+	height: 20%;
+}
+img.loading2{
+	display: none;
+	width: 100%;
+	height: 20%;
+}
+.container{
+	display: none;
+	height: 100%;
+	overflow: auto;
+	-webkit-overflow-scrolling: touch;
+	position: relative;
+}
+/* logo */
+.logo{
+	width: 5.75rem;
+	margin-left: .3rem;
+}
+.logo img{
+	display: block;
+	width: 100%;
+}
+/* 大图 */
+.picc{
+	width: 80%;
+}
+.picc img{
+	display: block;
+	width: 100%;
+}
+/* 按钮组 */
+.group{
+	text-align: center;
+	margin-top: .5rem;
+}
+.group button{
+	border: none;
+	background: none;
+	position: relative;
+}
+.group .btn1,.group .btn3{
+	width: 2.5rem;
+}
+.group .btn2{
+	width: 5rem;
+	margin-left: 1rem;
+	margin-right: 1rem;
+}
+.group button img{
+	display: block;
+	width: 100%;
+}
+.group button.btn2 img.word{
+	width: 34%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform:translate(-50%,-50%);
+	transform:translate(-50%,-50%);
+}
+/* 按钮旋转 */
+.group button.btn2 img.btn_bg{
+	-webkit-animation:rotate 2s linear infinite;
+	animation:rotate 2s linear infinite;
+}
+@-webkit-keyframes rotate{
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+@keyframes rotate{
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+/* cover */
+.cover{
+	display: none;
+	width: 100%;
+	/*height: 100%;*/
+	padding: .25rem .3rem;
+	background: url(../img/bg1.jpg) no-repeat center center/100% 100%; 
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+/* 活动规则 */
+.cover1 .title{
+	width: 85%;
+	position: relative;
+}
+.cover1 img.title_bg{
+	display: block;
+	width: 100%;
+}
+.cover1 img.word{
+	width: 3.75rem;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform:translate(-50%,-50%);
+	transform:translate(-50%,-50%);
+}
+.cover1 .show{
+	margin-top: .5rem;
+	margin-bottom: .5rem;
+	position: relative;
+}
+.cover1 img.show_bg{
+	display: block;
+	width: 100%;
+}
+.cover1 .word_box{
+	width: 100%;
+	height: 100%;
+	padding: 8% 9%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.cover1 .slide_box{
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	-webkit-overflow-scrolling: touch;
+}
+.cover1 .slide_box p{
+	font-size: 12px;
+	line-height: 1.5;
+	color: #fff;
+}
+.cover1 .btn{
+	border: none;
+	background: none;
+	display: block;
+	width: 90%;
+}
+.cover1 .btn img{
+	display: block;
+	width: 100%;
+}
+/* 获奖榜单 */
+.cover2 .title{
+	width: 85%;
+	position: relative;
+}
+.cover2 img.title_bg{
+	display: block;
+	width: 100%;
+}
+.cover2 img.word{
+	width: 3.75rem;
+	position: absolute;
+	top: 50%;
+	left: 18%;
+	/*-webkit-transform:translate(-50%,-50%);
+	transform:translate(-50%,-50%);*/
+	-webkit-transform:translate(0,-50%);
+	transform:translate(0,-50%);
+}
+.cover2 .title_word{
+	width: 6.2rem;
+	position: absolute;
+	top: 50%;
+	left: 47%;
+	-webkit-transform:translate(0,-50%);
+	transform:translate(0,-50%);
+	font-size: 12px;
+	color: #fff;
+}
+.cover2 .show{
+	margin-top: .5rem;
+	margin-bottom: .5rem;
+	position: relative;
+}
+.cover2 img.show_bg{
+	display: block;
+	width: 100%;
+}
+.cover2 .word_box{
+	width: 100%;
+	height: 100%;
+	padding: 1rem 1.5rem;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.cover2 .slide_box{
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	-webkit-overflow-scrolling: touch;
+}
+.cover2 .slide_box dt,.cover2 .slide_box dd{
+	font-size: 0;
+	color: #fff;
+}
+.cover2 .slide_box dt{
+	margin-bottom: 1rem;
+}
+.cover2 dl span,.cover2 dl i{
+	display: inline-block;
+	font-size: 12px;
+	line-height: 20px;
+	height: 20px;
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+}
+.cover2 dl span{
+	width: 60%;
+}
+.cover2 dl i{
+	width: 40%;
+}
+.cover2 dt span,.cover2 dt i{
+	font-size: 14px;
+}
+.cover2 dl i{
+	font-style: normal;
+}
+.cover2 .btn{
+	border: none;
+	background: none;
+	display: block;
+	width: 90%;
+}
+.cover2 .btn img{
+	display: block;
+	width: 100%;
+}
+/* 答题 */
+.cover3 .title{
+	width: 85%;
+	position: relative;
+}
+.cover3 img.title_bg{
+	display: block;
+	width: 100%;
+}
+.cover3 img.word{
+	width: 3.75rem;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform:translate(-50%,-50%);
+	transform:translate(-50%,-50%);
+}
+/* 外观 */
+.cover3 .exterior{
+	width: 82%;
+	margin-top: .5rem;
+	position: relative;
+}
+.cover3 img.exterior_bg{
+	display: block;
+	width: 100%;
+}
+.cover3 img.car_out{
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+/* 内饰 */
+.cover3 .interior{
+	width: 62%;
+	margin-top: .5rem;
+	position: relative;
+}
+.cover3 img.interior_bg{
+	display: block;
+	width: 100%;
+}
+.cover3 img.car_in{
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+/* 按钮组 */
+.cover3 .group_btn{
+	font-size: 0;
+	text-align: center;
+	margin-top: .85rem;
+}
+.cover3 .group_btn button{
+	border: none;
+	background: none;
+	width: 45%;
+	display: inline-block;
+	margin-bottom: .85rem;
+}
+.cover3 .group_btn button.btn1,.cover3 .group_btn button.btn3{
+	margin-right: 5%;
+}
+.cover3 .group_btn button img{
+	display: block;
+	width: 100%;
+}
+/* 进度条 */
+.cover3 .progress_box{
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.cover3 .progress_box .left,.cover3 .progress_box .right{
+	display: inline-block;
+	font-size: 17px;
+	color: #ff0000;
+}
+.cover3 .progress{
+	position: relative;
+}
+.cover3 .progress img.progress_bg{
+	display: block;
+	width: 100%;
+}
+.cover3 .progress img.percent{
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+}
+/* 失败提示 */
+.cover4{
+	height: 100%;
+	background: rgba(0,0,0,.6);
+	overflow: hidden;
+}
+.cover4 .tip{
+	width: 75%;
+	margin-top: 20%;
+	position: relative;
+}
+.cover4 .tip img.tip_bg{
+	display: block;
+	width: 100%;
+}
+.cover4 .tip .message{
+	width: 52%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform:translate(-50%,-50%);
+	transform:translate(-50%,-50%);
+}
+.cover4 .tip .message i{
+	font-style: normal;
+	color: #000;
+	font-size: 13px;
+}
+.cover4 .tip .message b{
+	font-weight: 500;
+	color: #fefefe;
+}
+.cover4 .tip img.word{
+	display: block;
+	width: 100%;
+}
+/* 按钮旋转 */
+.cover4 .tip img.tip_bg{
+	-webkit-animation:rotate 2s linear infinite;
+	animation:rotate 2s linear infinite;
+}
+.cover4 .btn{
+	border: none;
+	background: none;
+	display: block;
+	width: 90%;
+	margin-top: 20%;
+}
+.cover4 .btn img{
+	display: block;
+	width: 100%;
+}
+
+/* 程序有错提示 */
+.cover5{
+	height: 100%;
+	background: rgba(0,0,0,.6);
+	overflow: hidden;
+}
+.cover5 .tip{
+	width: 75%;
+	margin-top: 20%;
+	position: relative;
+}
+.cover5 .tip img.tip_bg{
+	display: block;
+	width: 100%;
+}
+.cover5 .tip .message{
+	width: 74%;
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform:translate(-50%,-50%);
+	transform:translate(-50%,-50%);
+}
+/* 按钮旋转 */
+.cover5 .tip img.tip_bg{
+	-webkit-animation:rotate 2s linear infinite;
+	animation:rotate 2s linear infinite;
+}
+.cover5 .btn{
+	border: none;
+	background: none;
+	display: block;
+	width: 90%;
+	margin-top: 20%;
+}
+.cover5 .btn img{
+	display: block;
+	width: 100%;
+}
